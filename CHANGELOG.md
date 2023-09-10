@@ -1,3 +1,12 @@
+## Week2 Day2 Homework - [2023-09-10]
+### Replaced
+- Replaced all embedded styling with a separate stylesheet
+
+### Added
+- Added styling for `activities.html` and `contact.html`
+
+<br>
+
 ## Week2 Day1 Homework - [2023-09-09]
 ### Added
 - Added partner images and logos
