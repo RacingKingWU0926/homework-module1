@@ -4,6 +4,8 @@ header {
     min-height: 400px;
     padding-top: 3em;
 }
+
+/* Home */
 #home header {
     background: no-repeat url(images/cliff_ocean.jpg);
     background-size: 1500px;
@@ -29,7 +31,6 @@ header {
 }
 .main-menu ul li {
     list-style-type: none;
-    /* display: inline-block; */
     float: left;
     padding-left: 25px;
     padding-right: 25px;
@@ -84,7 +85,7 @@ section #partners {
 section #partners .partner {
     display: inline-block;
     margin: 0 0.75em;
-    padding: 1.3em 1.5em;
+    padding: 1.5em 1.5em;
     background-color: #fff;
     border-radius: 50%;
 }
@@ -140,6 +141,35 @@ footer #disclaimer {
 footer #disclaimer p {
     font-size: 0.85em;
     text-align: center;
+}
+
+/* Cliffs */
+#cliffs header {
+    background: no-repeat url(images/forest_cliff.jpg);
+    background-size: 1500px;
+}
+#cliffs main .cliff-snapshots {
+    text-align: center;
+    background-color: #fff;
+    width: 1200px;
+    padding: 0 50px 50px 0;
+    margin: 0 auto;
+}
+#cliffs main .cliff-snapshots ul li {
+    display: inline-block;
+    margin: 15px 15px;
+}
+#cliffs main .cliff-snapshots ul .snapshot img {
+    width: 480px;
+    height: 230px;
+}
+#cliffs main .cliff-snapshots ul .snapshot .image-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px;
+    background-color: #852B1B;
 }
 
 /* Activities */
