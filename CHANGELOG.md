@@ -1,3 +1,10 @@
+## Week2 Day3 Homework - [2023-09-11]
+### Added
+- Added a new page `cliffs.html`
+- Added styling for `cliffs.html`
+
+<br>
+
 ## Week2 Day2 Homework - [2023-09-10]
 ### Replaced
 - Replaced all embedded styling with a separate stylesheet
