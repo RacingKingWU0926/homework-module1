@@ -1,3 +1,9 @@
+## Week3 Day2 Homework - [2023-09-17]
+### Replaced
+- Replaced partners list with scripts
+
+<br>
+
 ## Week3 Day1 Homework - [2023-09-17]
 ### Added
 - Display local time at `index.html`
