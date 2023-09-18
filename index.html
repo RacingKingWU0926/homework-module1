@@ -40,24 +40,12 @@
         <!-- Partners -->
         <section>
             <ul id="partners">
-                <li class="partner">
-                    <img src="images/partners/partner-bustour.png" alt="Partner Bus Tours">
-                </li>
-                <li class="partner">
-                    <img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental">
-                </li>
-                <li class="partner">
-                    <img src="images/partners/partner-campingadv.png" alt="Partner Camping adventure">
-                </li>
-                <li class="partner">
-                    <img src="images/partners/partner-collegetours.png" alt="Partner College Tours">
-                </li>
-                <li class="partner">
-                    <img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals">
-                </li>
-                <li class="partner">
-                    <img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group">
-                </li>
+                <!-- <li class="partner"><img src="images/partners/partner-bustour.png" alt="Partner Bus Tours"></li> -->
+                <!-- <li class="partner"><img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental"></li> -->
+                <!-- <li class="partner"><img src="images/partners/partner-campingadv.png" alt="Partner Camping adventure"></li> -->
+                <!-- <li class="partner"><img src="images/partners/partner-collegetours.png" alt="Partner College Tours"></li> -->
+                <!-- <li class="partner"><img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals"></li> -->
+                <!-- <li class="partner"><img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group"></li> -->
             </ul>
         </section>
         <!-- Footer -->
@@ -77,6 +65,7 @@
             </div>
         </footer>
     </div>
+    <!-- Script for time of day -->
     <script>
         const minuteDiffToTZ = {240: "ET", 300: "MT", 360: "MT", 420: "PT"}  // does not handle daylight savings
         function currentTime() {
@@ -97,5 +86,18 @@
         }
         currentTime();
         setInterval(currentTime, 1000);
+    </script>
+    <!-- Script for partners -->
+    <script>
+        const partnerClass = "partner"
+        const partnersFolder = "images/partners"
+        const partnerNames = ["bustour", "cabinrental", "campingadv", "collegetours", "rentalbike", "tourgroup"];
+        var partners = [];
+        for (var i=0; i<partnerNames.length; i++) {
+            var imageName = `${partnerClass}-${partnerNames[i]}.png`
+            var imageElem = `<img src='${partnersFolder}/${imageName}'>`;
+            partners.push(`<li class=${partnerClass}> ${imageElem} </li>`);
+        }
+        document.getElementById("partners").innerHTML = partners;
     </script>
 </body>
