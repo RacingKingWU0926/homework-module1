@@ -1,3 +1,10 @@
+## Week3 Day1 Homework - [2023-09-17]
+### Added
+- Display local time at `index.html`
+- Added styling for displaying local time
+
+<br>
+
 ## Week2 Day3 Homework - [2023-09-11]
 ### Added
 - Added a new page `cliffs.html`
