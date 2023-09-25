@@ -1,3 +1,10 @@
+## Week4 Day1 Homework - [2023-09-24]
+### Replaced
+- Moved embedded scripts to a JS folder
+
+### Added
+- A random-code generation div
+
 ## Week3 Day2 Homework - [2023-09-17]
 ### Replaced
 - Replaced partners list with scripts

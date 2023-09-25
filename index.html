@@ -39,14 +39,7 @@
         </main>
         <!-- Partners -->
         <section>
-            <ul id="partners">
-                <!-- <li class="partner"><img src="images/partners/partner-bustour.png" alt="Partner Bus Tours"></li> -->
-                <!-- <li class="partner"><img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental"></li> -->
-                <!-- <li class="partner"><img src="images/partners/partner-campingadv.png" alt="Partner Camping adventure"></li> -->
-                <!-- <li class="partner"><img src="images/partners/partner-collegetours.png" alt="Partner College Tours"></li> -->
-                <!-- <li class="partner"><img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals"></li> -->
-                <!-- <li class="partner"><img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group"></li> -->
-            </ul>
+            <ul id="partners"></ul>
         </section>
         <!-- Footer -->
         <footer>
@@ -65,40 +58,6 @@
             </div>
         </footer>
     </div>
-    <!-- Script for time of day -->
-    <script>
-        const minuteDiffToTZ = {240: "ET", 300: "MT", 360: "MT", 420: "PT"}  // does not handle daylight savings
-        function currentTime() {
-            var date = new Date();
-            var hour = date.getHours();
-            var minute = date.getMinutes();
-            var second = date.getSeconds();
-            var ampm;  // "AM" or "PM"
-            var minuteDiff = date.getTimezoneOffset();
-            var timeZone;
-            minute = (minute < 10 ? "0" : "") + minute
-            second = (second < 10 ? "0" : "") + second
-            timeZone = minuteDiffToTZ[minuteDiff] || "UTC" + (minuteDiff >= 0 ? "-" : "") + minuteDiff / 60;
-            ampm = hour < 12 ? "AM" : "PM"
-            hour = hour > 12 ? hour - 12 : hour
-            var time = `${hour}:${minute}:${second} ${ampm} ${timeZone}`;
-            document.getElementById("clock").innerText = time;
-        }
-        currentTime();
-        setInterval(currentTime, 1000);
-    </script>
-    <!-- Script for partners -->
-    <script>
-        const partnersId = "partners"
-        const partnerClass = "partner"
-        const partnersFolder = `images/${partnersId}`
-        const partnerNames = ["bustour", "cabinrental", "campingadv", "collegetours", "rentalbike", "tourgroup"];
-        var partners = [];
-        for (var i=0; i<partnerNames.length; i++) {
-            var imageName = `${partnerClass}-${partnerNames[i]}.png`
-            var imageElem = `<img src='${partnersFolder}/${imageName}'>`;
-            partners.push(`<li class=${partnerClass}> ${imageElem} </li>`);
-        }
-        document.getElementById(partnersId).innerHTML = partners.join('');
-    </script>
+    <script src="js/digclock.js"></script>
+    <script src="js/site_scripts.js"></script>
 </body>
