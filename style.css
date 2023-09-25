@@ -302,3 +302,31 @@ form .button input[type="submit"] {
     width: 150px;
     margin: 15px 0 10px 370px;
 }
+form .randomcode {
+    display: inline-block;
+}
+form .randomcode input {
+    margin-top: 20px;
+    height: 2em;
+    width: 130px;
+    float: left;
+    margin: 20px 20px 0 253px;
+}
+form .randomcode #codes {
+    padding: 10px;
+    background-color: lightgrey;
+    width: 90px;
+    text-align: center;
+    float: right;
+}
+
+form .button input {
+    /* background-color: #4977D1; */
+    color: #fff;
+    border: 0;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    width: 150px;
+    margin: 0 0 10px 371px;
+}
