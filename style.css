@@ -264,19 +264,19 @@ label {
     margin-left: 15px;
     font-weight: bold;
 }
-input {
-    margin-left: 15px;
-    margin-bottom: 15px;
-    width: 500px;
-}
 input[type="text"],
 input[type="email"] {
     display: block;
     height: 1.5em;
+    width: 500px;
+    margin-left: 15px;
+    margin-bottom: 15px;
 }
 input[type="radio"] {
     width: 12px;
     margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 15px;
     margin-bottom: 15px;
 }
 form .selectmenu select {
@@ -292,16 +292,7 @@ form .commentbox textarea {
     width: 500px;
     resize: none;
 }
-form .button input[type="submit"] {
-    background-color: #4977D1;
-    color: #fff;
-    border: 0;
-    font-size: 15px;
-    font-weight: bold;
-    height: 40px;
-    width: 150px;
-    margin: 15px 0 10px 370px;
-}
+
 form .randomcode {
     display: inline-block;
 }
@@ -320,7 +311,7 @@ form .randomcode #codes {
     float: right;
 }
 
-form #button input {
+form #submit {
     /* background-color: #4977D1; */
     color: #fff;
     border: 0;
