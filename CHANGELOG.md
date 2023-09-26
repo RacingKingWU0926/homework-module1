@@ -1,3 +1,7 @@
+## Week4 Day2 Homework - [2023-09-24]
+### Added
+- Added codebox input event listener and handler
+
 ## Week4 Day1 Homework - [2023-09-24]
 ### Replaced
 - Moved embedded scripts to a JS folder
