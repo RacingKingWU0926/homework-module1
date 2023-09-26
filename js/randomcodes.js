@@ -10,11 +10,13 @@ function generateCode() {
     return code;
 }
 
-document.getElementById("codes").innerHTML = generateCode();
+// generate code
+const generated = generateCode();
+document.getElementById("codes").innerHTML = generated;
 
+// verify generated & entered code
 function disableButton(isDisabled) {
     document.getElementById("submit").disabled = isDisabled;
-    console.log("hey!")
 
     if (isDisabled == true) {
         document.getElementById("submit").style.backgroundColor = "rgba(73, 119, 209, 0.3)";
@@ -25,3 +27,16 @@ function disableButton(isDisabled) {
     }
 }
 
+// handle codebox input event
+function evaluateInput() {
+    var entered = document.getElementById("code-entered").value;
+    if (entered.length == generated.length && entered === generated) {
+        disableButton(false);
+    } else {
+        disableButton(true);
+    }
+}
+
+// listen to codebox input event
+var codebox = document.getElementById("code-entered")
+codebox.addEventListener("input", evaluateInput);
