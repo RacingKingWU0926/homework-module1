@@ -1,3 +1,7 @@
+## Week5 Day1 Homework - [2023-10-01]
+### Added
+- Added selectable interaction to activities
+
 ## Week4 Day2 Homework - [2023-09-24]
 ### Added
 - Added codebox input event listener and handler
