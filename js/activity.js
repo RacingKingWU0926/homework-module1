@@ -9,8 +9,8 @@ $(document).ready(function() {
 
     // Add class "selectable" to all <td> cells (excluding "Not Available")
     $('td:not(.unselectable)').each(function () {
-        $cellVal = $(this).text().trim();
-        if ($cellVal === 'Not Available') {
+        var cellVal = $(this).text().trim();
+        if (cellVal === 'Not Available') {
             $(this).addClass('unselectable');
         } else {
             $(this).addClass('selectable');
@@ -19,11 +19,28 @@ $(document).ready(function() {
 
     // Click event: if the cell is already selected, remove it. Otherwise, add it.
     $('td.selectable').click(function () {
+        var activity = $(this).text().trim();
+
         if ($(this).hasClass('selected')) {
             $(this).removeClass('selected');
+            $("#result p:contains(" + activity + ")").remove();
+
+            // if nothing is selected, hide the #displaySelected box
+            if ($("#result").has("p").length == false) {
+                $("#displaySelected").css({
+                    "visibility": "hidden",
+                    "margin": "0 auto 0 auto",
+                });
+            }
+
         } else {
             $(this).addClass('selected');
+            $("#result").append(`<p>${activity}</p>`);
+            $("#displaySelected").css({
+                "visibility": "visible",
+                "margin": "2em auto 2em auto",
+            });
         }
     });
 
-})
+});
