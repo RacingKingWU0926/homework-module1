@@ -21,9 +21,13 @@ $(document).ready(function() {
     $('td.selectable').click(function () {
         var activity = $(this).text().trim();
 
+        // Get the column index of the clicked cell, in order to get the column name
+        var cliffIndex = $(this).index();
+        var cliffName = $('th').eq(cliffIndex).text();
+
         if ($(this).hasClass('selected')) {
             $(this).removeClass('selected');
-            $("#result p:contains(" + activity + ")").remove();
+            $(`#result p:contains(${activity})`).remove();
 
             // if nothing is selected, hide the #displaySelected box
             if ($("#result").has("p").length == false) {
@@ -35,7 +39,7 @@ $(document).ready(function() {
 
         } else {
             $(this).addClass('selected');
-            $("#result").append(`<p>${activity}</p>`);
+            $("#result").append(`<p>${activity} at ${cliffName}</p>`);
             $("#displaySelected").css({
                 "visibility": "visible",
                 "margin": "2em auto 2em auto",
