@@ -1,10 +1,19 @@
+## Week5 Day3 Homework - [2023-10-02]
+(week5 day2 is a different homework)
+### Added
+- Added a box to display all selected activities
+
 ## Week5 Day1 Homework - [2023-10-01]
 ### Added
 - Added selectable interaction to activities
 
+<br>
+
 ## Week4 Day2 Homework - [2023-09-24]
 ### Added
 - Added codebox input event listener and handler
+
+<br>
 
 ## Week4 Day1 Homework - [2023-09-24]
 ### Replaced
