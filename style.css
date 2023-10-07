@@ -7,7 +7,7 @@ header {
 
 /* Home */
 #home header {
-    background: no-repeat url(images/cliff_ocean.jpg);
+    background: no-repeat lightgrey url(images/cliff_ocean.jpg);
     background-size: 1500px;
 }
 .main-header {
@@ -17,14 +17,14 @@ header {
     min-height: 100px;
     height: 100px;
 }
-
-/* Navigation */
 .main-header .logo img {
     width: 100px;
     height: 100px;
     margin: 0 2em 0 0;
     float: left;
 }
+
+/* Navigation */
 .main-menu {
     margin-left: 227px;
     font-weight: 400;
@@ -371,3 +371,44 @@ form #submit {
     width: 150px;
     margin: 0 0 10px 371px;
 }
+
+/* Media Queries */
+/* @media (max-width: 768px) {
+    footer #nondisclaimer .copy {
+        padding: 3.5em 0em 3.5em 0em;
+        text-align: center;
+        float: none;
+        font-size: 0.9em;
+      }
+      footer #nondisclaimer .social {
+        padding: 2.5em 0;
+        margin: 0;
+        text-align: center;
+        float: none;
+      }
+}
+
+@media (max-width: 992px) {
+    .logo img {
+        position: relative;
+        bottom: 8px;
+    }
+    .main-menu {
+        width: 200px;
+        background-color:rgb(255, 255, 255);
+        position: absolute;
+        right: 1.7em;
+      }
+      .main-menu ul li {
+        border-bottom: 1px solid rgba(202, 204, 202, 0.6);
+      }
+      main {
+        padding: 3em 1em 3em 1em;
+        margin: 0;
+      }
+      #home .main-col-content {
+        padding: 25px;
+        min-height: 450px;
+        margin-top: 1em;
+      }
+} */
