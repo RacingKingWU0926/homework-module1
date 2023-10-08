@@ -1,10 +1,12 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <title>Cliffs Activities</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css"></link>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body id="activities">
     <!-- Container to wrap everything -->
@@ -12,18 +14,33 @@
         <header>
             <!-- Main Header -->
             <div class="main-header">
+                <!-- Logo -->
                 <div class="logo">
                     <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
-                    <!-- Main Menu -->
-                    <nav class="main-menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="cliffs.html">Cliffs</a></li>
-                            <li class="active"><a href="activities.html">Activities</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
                 </div>
+                <!-- Main Menu -->
+                <nav class="navbar navbar-expand-lg main-menu navbar-light">
+                    <!-- Hamburger Menu Button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="cliffs.html">Cliffs</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="activities.html">Activities</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </header>
         <!-- Main Content -->
@@ -112,4 +129,10 @@
     </div>
     <script src="js/site_scripts.js"></script>
     <script src="js/activity.js"></script>
+    <!-- jQuery, Popper, Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
+</html>

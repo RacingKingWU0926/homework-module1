@@ -16,6 +16,8 @@ header {
     margin: 2em auto 0 auto;
     min-height: 100px;
     height: 100px;
+    display: flex;
+    justify-content: flex-end;
 }
 .main-header .logo img {
     width: 100px;
@@ -26,12 +28,12 @@ header {
 
 /* Navigation */
 .main-menu {
-    margin-left: 227px;
     font-weight: 400;
+    margin-left: auto;
 }
 .main-menu ul li {
     list-style-type: none;
-    float: left;
+    display: inline-block;
     padding-left: 25px;
     padding-right: 25px;
     border-left: 1px solid rgba(202, 204, 202, 0.6);
@@ -67,18 +69,18 @@ header {
 }
 
 /* Main */
-main h1 {
+main {
     font-family: Arial, Helvetica, sans-serif;
+}
+main h1 {
     font-weight: bold;
     color: #9ed034;
     padding: 40px 50px 10px 50px;
 }
 main h2 {
-    font-family: Arial, Helvetica, sans-serif;
     padding: 0 50px 0 50px;
 }
 main p {
-    font-family: Arial, Helvetica, sans-serif;
     padding: 0 50px;
     text-align: justify;
 }
@@ -386,29 +388,21 @@ form #submit {
         text-align: center;
         float: none;
       }
-}
+} */
+
 
 @media (max-width: 992px) {
-    .logo img {
-        position: relative;
-        bottom: 8px;
-    }
-    .main-menu {
-        width: 200px;
-        background-color:rgb(255, 255, 255);
+    .navbar-toggler {
         position: absolute;
-        right: 1.7em;
-      }
-      .main-menu ul li {
-        border-bottom: 1px solid rgba(202, 204, 202, 0.6);
-      }
-      main {
-        padding: 3em 1em 3em 1em;
-        margin: 0;
-      }
-      #home .main-col-content {
-        padding: 25px;
-        min-height: 450px;
-        margin-top: 1em;
-      }
-} */
+        right:1em;
+    }
+    .main-menu ul {
+        padding: 5em 0;
+    }
+    .main-menu ul li {
+        line-height: 80px;
+        background-color:rgb(255, 255, 255);
+        border-bottom: 1px solid rgba(202, 204, 202);
+        font-size: large;
+    }
+}
