@@ -128,7 +128,7 @@ footer #nondisclaimer .social {
 footer #nondisclaimer .social .fa {
     padding: 15px;
     font-size: 15px;
-    width: 15px;
+    width: 45px;
     text-align: center;
     text-decoration: none;
     margin: 0 4px;
@@ -191,40 +191,41 @@ footer #disclaimer p {
     background: no-repeat url(images/runfly.jpg);
     background-size: 1500px;
 }
-table {
-    width: 1000px;
-    margin: 4em 4em 0 4em;
+#activityTable table {
+    border-spacing: 5px 1rem;
     font-family: Arial, Helvetica, sans-serif;
 }
-caption {
+#activityTable caption {
+    caption-side: top;
+    text-align: center;
     background: #852B1B;
-    height: 40px;
     color: #fff;
     font-size: 1.3em;
     font-weight: bold;
-    padding-top: 0.7em;
 }
-thead {
+#activityTable thead {
     background-color: #BDE1FF;
 }
-thead th:first-child {
+#activityTable thead th:first-child {
     width: 125px;
     height: 50px;
     background: #4977D1;
     color: #fff;
 }
-tbody {
+#activityTable tbody {
     background: #EEFFE6;
     text-align: center;
 }
-th, td {
+#activityTable th, #activityTable td {
     width: 225px;
     height: 75px;
     vertical-align: middle;
-    border: solid 1px #852B1B;
+    text-align: center;
+    border: 1px solid #852B1B;
+
 }
 
-th {
+#activityTable th {
     font-weight: bold;
     background: #BDE1FF;
 }
@@ -310,7 +311,7 @@ fieldset legend {
     color: #4977D1;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin: 20px;
 }
 label {
     margin-left: 15px;
@@ -358,9 +359,11 @@ form .randomcode input {
 form .randomcode #codes {
     padding: 10px;
     background-color: lightgrey;
-    width: 90px;
+    width: 100px;
     text-align: center;
     float: right;
+    margin-top: 15px;
+    margin-left: 10px;
 }
 
 form #submit {
