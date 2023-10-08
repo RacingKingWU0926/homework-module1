@@ -76,16 +76,26 @@ header {
 main {
     font-family: Arial, Helvetica, sans-serif;
 }
+main .mainTB {
+    display: grid;
+}
+main .mainTB div {
+    border: 2px solid lightgrey;
+    margin: 1em;
+}
 main h1 {
     font-weight: bold;
     color: #9ed034;
     padding: 40px 50px 10px 50px;
+    text-align: center;
 }
 main h2 {
-    padding: 0 50px 0 50px;
+    padding: 20px;
+    text-align: center;
+    text-wrap: balance;
 }
 main p {
-    padding: 0 50px;
+    padding: 10px 30px;
     text-align: justify;
 }
 
@@ -95,7 +105,6 @@ section {
     background-color: #4288C3;
 }
 #partners {
-    max-width: 90%;
     display: grid;
     justify-items: center;
 }
@@ -126,7 +135,6 @@ footer #nondisclaimer .copy {
 }
 footer #nondisclaimer .social {
     padding: 2em;
-    margin-right: 1em;
     float: right;
 }
 footer #nondisclaimer .social .fa {
@@ -406,7 +414,7 @@ form #submit {
       }
 } */
 
-
+/* Navbar: collapse for lg- viewport */
 @media (max-width: 992px) {
     .navbar-toggler {
         position: absolute;
@@ -423,7 +431,7 @@ form #submit {
     }
 }
 
-/* Partners */
+/* Partners: 2, 3, 6 cols for sm, md, lg+ viewport respectively */
 @media (min-width: 576px) {
     #partners {
         grid-template-columns: repeat(2, 1fr);
@@ -437,5 +445,23 @@ form #submit {
 @media (min-width: 992px) {
     #partners {
         grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+/* Main Text Box: 2 cols for md+ viewport */
+@media (min-width: 768px) {
+    .mainTB {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Nondisclaimer: stack and thin for md- viewport */
+@media (max-width: 768px) {
+    footer #nondisclaimer {
+        display: grid;
+        justify-items: center;
+    }
+    footer #nondisclaimer .copy {
+        padding: 2em 0 0 0;
     }
 }
