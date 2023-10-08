@@ -7,8 +7,11 @@ header {
 
 /* Home */
 #home header {
+    width: 100%;
     background: no-repeat lightgrey url(images/cliff_ocean.jpg);
-    background-size: 1500px;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .main-header {
     background-color: rgb(255, 255, 255, 0.8);
@@ -160,7 +163,10 @@ footer #disclaimer p {
 /* Cliffs */
 #cliffs header {
     background: no-repeat url(images/forest_cliff.jpg);
-    background-size: 1500px;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
 }
 #cliffs main .cliff-snapshots {
     text-align: center;
@@ -189,7 +195,10 @@ footer #disclaimer p {
 /* Activities */
 #activities header {
     background: no-repeat url(images/runfly.jpg);
-    background-size: 1500px;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
 }
 #activityTable table {
     border-spacing: 5px 1rem;
@@ -282,7 +291,10 @@ footer #disclaimer p {
 /* Contact */
 #contact header {
     background: no-repeat url(images/cliff_rock.jpg);
-    background-size: 1500px;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
 }
 
 /* Contact Info */
