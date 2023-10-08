@@ -6,6 +6,6 @@ var partners = [];
 for (var i=0; i<partnerNames.length; i++) {
     var imageName = `${partnerClass}-${partnerNames[i]}.png`
     var imageElem = `<img src='${partnersFolder}/${imageName}'>`;
-    partners.push(`<li class=${partnerClass}> ${imageElem} </li>`);
+    partners.push(`<div class=${partnerClass}> ${imageElem} </div>`);
 }
 document.getElementById(partnersId).innerHTML = partners.join('');

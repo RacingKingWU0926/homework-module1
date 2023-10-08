@@ -1,3 +1,14 @@
+## Week6 Day2 Homework - [2023-10-08]
+### Added
+- Use Bootstrap or general RWD to make everything responsive
+  - Background: responsive
+  - Main menu: collapsed to hamburger-menu button
+  - Main text: put in textbox and fit in columns
+  - Partners: fit in columns
+  - Footer: fit in columns
+
+<br>
+
 ## Week5 Day3 Homework - [2023-10-02]
 (week5 day2 is a different homework)
 ### Added
