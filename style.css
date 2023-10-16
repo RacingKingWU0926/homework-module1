@@ -204,7 +204,7 @@ footer #disclaimer p {
     background-image: url("images/runfly.jpg");
 }
 #activityTable {
-    margin-top: 40px;
+    margin: 40px 40px 0 40px;
 }
 
 #activityTable caption {
@@ -260,7 +260,7 @@ footer #disclaimer p {
     margin: 0 auto 0 auto;
     width: 700px;
     border: 2px solid #29AB87;
-    padding: 0.75em;
+    padding: 1em;
 }
 
 #activities main #displaySelected #result {
@@ -272,7 +272,7 @@ footer #disclaimer p {
 #activities main #displaySelected #sendinfo {
     display: flex;
     justify-content: flex-end;
-    height: 25px;
+    /* height: 25px; */
 }
 
 #activities main #result {
