@@ -324,6 +324,7 @@ footer #disclaimer p {
 #contact form {
     padding: 30px 50px;
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 800px;
 }
 fieldset {
     border: 2px solid #9ed034;
@@ -333,6 +334,7 @@ fieldset legend {
     font-weight: bold;
     text-transform: uppercase;
     margin: 20px;
+    width: 200px;
 }
 label {
     margin-left: 15px;
@@ -340,30 +342,27 @@ label {
 }
 input[type="text"],
 input[type="email"] {
-    display: block;
     height: 1.5em;
-    width: 500px;
+    max-width: 500px;
+    width: 80%;
     margin-left: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 input[type="radio"] {
     width: 12px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    margin-left: 15px;
-    margin-bottom: 15px;
+    margin: 0 5px 30px 15px;
 }
 form .selectmenu select {
+    display: block;
     width: 150px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin: 0 15px 30px 15px;
     text-align: center;
 }
 form .commentbox textarea {
     display: block;
     margin-left: 15px;
-    height: 170px;
-    width: 500px;
+    max-width: 500px;
+    width: 80%;
     resize: none;
 }
 
@@ -375,45 +374,29 @@ form .randomcode input {
     height: 2em;
     width: 130px;
     float: left;
-    margin: 20px 20px 0 253px;
+    margin: 20px 20px 0 250px;
 }
 form .randomcode #codes {
     padding: 10px;
     background-color: lightgrey;
     width: 100px;
     text-align: center;
-    float: right;
+    float: left;
     margin-top: 15px;
-    margin-left: 10px;
 }
 
 form #submit {
-    /* background-color: #4977D1; */
     color: #fff;
     border: 0;
     font-size: 15px;
     font-weight: bold;
     height: 40px;
     width: 150px;
-    margin: 0 0 10px 371px;
+    margin-left: 350px;
+    margin-bottom: 10px;
 }
 
 /* Media Queries */
-/* @media (max-width: 768px) {
-    footer #nondisclaimer .copy {
-        padding: 3.5em 0em 3.5em 0em;
-        text-align: center;
-        float: none;
-        font-size: 0.9em;
-      }
-      footer #nondisclaimer .social {
-        padding: 2.5em 0;
-        margin: 0;
-        text-align: center;
-        float: none;
-      }
-} */
-
 /* Navbar: collapse for lg- viewport */
 @media (max-width: 992px) {
     .navbar-toggler {
@@ -428,6 +411,24 @@ form #submit {
         background-color:rgb(255, 255, 255);
         border-bottom: 1px solid rgba(202, 204, 202);
         font-size: large;
+    }
+}
+
+/* random code: adjust left margin for sm and xs viewport */
+@media (max-width: 768px) {
+    form .randomcode input {
+        margin-left: 210px;
+    }
+    form #submit {
+        margin-left: 310px;
+    }
+}
+@media (max-width: 576px) {
+    form .randomcode input {
+        margin-left: 70px;
+    }
+    form #submit {
+        margin-left: 170px;
     }
 }
 
