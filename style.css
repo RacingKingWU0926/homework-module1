@@ -6,7 +6,6 @@
     height: 100px;
     display: flex;
     justify-content: center;
-    /* float: left; */
 }
 .main-header .logo img {
     width: 100px;
@@ -22,7 +21,7 @@
     margin-right: -20px;
 }
 .main-menu ul li {
-    width: 140px;
+    width: 120px;
     list-style-type: none;
     display: inline-block;
     padding-left: 25px;
@@ -48,12 +47,11 @@
     color: #fff;
 }
 
-.banner img {
+.banner-img {
     width: 100%;
-    height: 500px;
+    height: 700px;
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -65,7 +63,7 @@
     padding: 1em;
     font-family: Arial, Helvetica, sans-serif;
     color: #3a3a3a;
-    margin-top: 400px;
+    margin-top: 600px;
     text-align: center;
     
 }
@@ -75,6 +73,9 @@
 
 
 /* Home */
+#home .banner-img {
+    background-image: url("images/cliff_ocean.jpg");
+}
 
 /* Main */
 main {
@@ -172,12 +173,8 @@ footer #disclaimer p {
 }
 
 /* Cliffs */
-#cliffs header {
-    background: no-repeat url(images/forest_cliff.jpg);
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
+#cliffs .banner-img {
+    background-image: url("images/forest_cliff.jpg");
 }
 #cliffs main .cliff-snapshots {
     text-align: center;
@@ -204,12 +201,8 @@ footer #disclaimer p {
 }
 
 /* Activities */
-#activities header {
-    background: no-repeat url(images/runfly.jpg);
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
+#activities .banner-img {
+    background-image: url("images/runfly.jpg");
 }
 #activityTable {
     margin-top: 40px;
@@ -300,12 +293,8 @@ footer #disclaimer p {
 }
 
 /* Contact */
-#contact header {
-    background: no-repeat url(images/cliff_rock.jpg);
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
+#contact .banner-img {
+    background-image: url("images/cliff_rock.jpg");
 }
 
 /* Contact Info */

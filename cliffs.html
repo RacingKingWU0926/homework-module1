@@ -12,88 +12,96 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body id="cliffs">
-    <!-- Container to wrap everything -->
-    <div id="container">
-        <header>
-            <!-- Main Header -->
-            <div class="main-header navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-                <!-- Logo -->
-                <div class="logo">
-                    <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
+    <!-- Main Header -->
+    <header class="main-header sticky-top">
+        <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
+            </div>
+
+            <!-- Main Menu -->
+            <nav class="main-menu navbar navbar-expand-lg">
+                <!-- Hamburger Menu Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="cliffs.html">Cliffs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="activities.html">Activities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-                <!-- Main Menu -->
-                <nav class="navbar navbar-expand-lg main-menu navbar-light">
-                    <!-- Hamburger Menu Button -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a href="cliffs.html">Cliffs</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="activities.html">Activities</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="banner-img"></div>
+        <div id="timeofday"><span>Your Current Local Time: </span><span id="clock"></span></div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <h1>California's Greatest Cliffs</h1>
+        <p>The greatest cliffs are these four cliffs located in southern California. Each of these cliffs have their own uniqueness and beauty: West Cliff, North Cliff, East Cliff and South Cliff are the pride of California. Each cliff has many amenities to offer visitors such as recreational areas, camping sites, wildlife watch spots and overnight cabins.</p>
+        <p>No matter which direction you head from Irvine, California, the sites are easily reached within a 100 mile radius. West Cliff is the most popular among Westcliff University campus students because of its close proximity.</p>
+        <!-- Cliff Snapshots -->
+        <div class="cliff-snapshots">
+            <ul>
+                <li class="snapshot">
+                    <div class="image-text">West Cliff</div>
+                    <image src="images/cliff-west-sea.jpg" alt="West Cliff">
+                </li>
+                <li class="snapshot">
+                    <div class="image-text">North Cliff</div>
+                    <image src="images/cliff-north-mountain.jpg" alt="North Cliff">
+                </li>
+                <li class="snapshot">
+                    <div class="image-text">East Cliff</div>
+                    <image src="images/cliff-east-river.jpg" alt="East Cliff">
+                </li>
+                <li class="snapshot">
+                    <div class="image-text">South Cliff</div>
+                    <image src="images/cliff-south-canyon.jpg" alt="South Cliff">
+                </li>
+            </ul>
+        </div>
+    </main>
+    <!-- Partners -->
+    <section>
+        <ul id="partners"></ul>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div id="nondisclaimer">
+            <div class="copy">
+                &copy; Copyright 2020 :: GreatCliffs.com
             </div>
-        </header>
-        <!-- Main Content -->
-        <main>
-            <h1>California's Greatest Cliffs</h1>
-            <p>The greatest cliffs are these four cliffs located in southern California. Each of these cliffs have their own uniqueness and beauty: West Cliff, North Cliff, East Cliff and South Cliff are the pride of California. Each cliff has many amenities to offer visitors such as recreational areas, camping sites, wildlife watch spots and overnight cabins.</p>
-            <p>No matter which direction you head from Irvine, California, the sites are easily reached within a 100 mile radius. West Cliff is the most popular among Westcliff University campus students because of its close proximity.</p>
-            <!-- Cliff Snapshots -->
-            <div class="cliff-snapshots">
-                <ul>
-                    <li class="snapshot">
-                        <div class="image-text">West Cliff</div>
-                        <image src="images/cliff-west-sea.jpg" alt="West Cliff">
-                    </li>
-                    <li class="snapshot">
-                        <div class="image-text">North Cliff</div>
-                        <image src="images/cliff-north-mountain.jpg" alt="North Cliff">
-                    </li>
-                    <li class="snapshot">
-                        <div class="image-text">East Cliff</div>
-                        <image src="images/cliff-east-river.jpg" alt="East Cliff">
-                    </li>
-                    <li class="snapshot">
-                        <div class="image-text">South Cliff</div>
-                        <image src="images/cliff-south-canyon.jpg" alt="South Cliff">
-                    </li>
-                </ul>
+            <div class="social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
             </div>
-        </main>
-        <!-- Partners -->
-        <section>
-            <ul id="partners"></ul>
-        </section>
-        <!-- Footer -->
-        <footer>
-            <div id="nondisclaimer">
-                <div class="copy">
-                    &copy; Copyright 2020 :: GreatCliffs.com
-                </div>
-                <div class="social">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                </div>
-            </div>
-            <div id="disclaimer">
-                <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
-            </div>
-        </footer>
-    </div>
+        </div>
+        <div id="disclaimer">
+            <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/digclock.js"></script>
     <script src="js/site_scripts.js"></script>
 </body>
 
