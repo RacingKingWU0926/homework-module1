@@ -16,14 +16,14 @@ document.getElementById("codes").innerHTML = generated;
 
 // verify generated & entered code
 function disableButton(isDisabled) {
-    document.getElementById("inquire").disabled = isDisabled;
+    document.getElementById("submit").disabled = isDisabled;
 
     if (isDisabled == true) {
-        document.getElementById("inquire").style.backgroundColor = "rgba(73, 119, 209, 0.3)";
-        document.getElementById("inquire").style.color = "rgba(255, 255, 255, 0.5)";
+        document.getElementById("submit").style.backgroundColor = "rgba(73, 119, 209, 0.3)";
+        document.getElementById("submit").style.color = "rgba(255, 255, 255, 0.5)";
     } else {
-        document.getElementById("inquire").style.backgroundColor = "rgba(73, 119, 209, 1)";
-        document.getElementById("inquire").style.color = "rgba(255, 255, 255, 1)";
+        document.getElementById("submit").style.backgroundColor = "rgba(73, 119, 209, 1)";
+        document.getElementById("submit").style.color = "rgba(255, 255, 255, 1)";
     }
 }
 

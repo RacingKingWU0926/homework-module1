@@ -209,10 +209,10 @@ footer #disclaimer p {
     background-size: cover;
     width: 100%;
 }
-#activityTable table {
-    border-spacing: 5px 1rem;
-    font-family: Arial, Helvetica, sans-serif;
+#activityTable {
+    margin-top: 40px;
 }
+
 #activityTable caption {
     caption-side: top;
     text-align: center;
@@ -394,6 +394,10 @@ form #submit {
     width: 150px;
     margin-left: 350px;
     margin-bottom: 10px;
+}
+.fa-paper-plane {
+    margin-right: 5px;
+    
 }
 
 /* Media Queries */
