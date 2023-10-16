@@ -16,7 +16,7 @@
     <div id="container">
         <header>
             <!-- Main Header -->
-            <div class="main-header">
+            <div class="main-header navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
                 <!-- Logo -->
                 <div class="logo">
                     <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
@@ -62,38 +62,48 @@
             <form action="/contact" method="post">  
             <fieldset>  
                 <legend class="col-form-label-l">Contact Form</legend>
-                <div class="textbox">
-                    <label>Name:</label>
-                    <input type="text" name="name" placeholder="John Doe">
-                    <label>Email:</label>
-                    <input type="email" name="email" placeholder="johndoe@gmail.com">
-                    <label>Phone:</label>
-                    <input type="text" name="phone" placeholder="xxx-xxx-xxxx"> 
+                <div class="ml-3">
+                    <label class="form-label">Name:</label>
+                    <input class="form-control" type="text" name="name" placeholder="">
                 </div>
-                <div class="radios">
-                    <label>How should we contact you?</label>  
-                    <input type="radio" name="contact" value="email" checked>Email 
-                    <input type="radio" name="contact" value="phone">Phone
+                <div class="ml-3">
+                    <label class="form-label">Email:</label>
+                    <input class="form-control" type="email" name="email" placeholder="" required>
                 </div>
-                <div class="selectmenu">
-                    <label>Which Cliff are you inquiring?</label>  
-                    <select>
-                        <option>West Cliff</option>
-                        <option>North Cliff</option>
-                        <option>East Cliff</option>
-                        <option>South Cliff</option>
+                <div class="ml-3">
+                    <label class="form-label">Phone:</label>
+                    <input class="form-control" type="text" name="phone" placeholder="xxx-xxx-xxxx"> 
+                </div>
+                <div class="ml-3">
+                    <label class="form-label">How should we contact you?</label>
+                    <div>
+                        <input class="form-check-label" type="radio" name="contact" value="email" checked>Email 
+                        <input class="form-check-label" type="radio" name="contact" value="phone">Phone
+                    </div>
+                </div>
+                <div class="selectmenu ml-3">
+                    <label class="form-label">Which Cliff are you inquiring?</label>  
+                    <select class="form-select form-select-sm">
+                        <option selected>Select a Cliff</option>
+                        <option value="west cliff">West Cliff</option>
+                        <option value="north cliff">North Cliff</option>
+                        <option value="east cliff">East Cliff</option>
+                        <option value="south cliff">South Cliff</option>
                     </select>
                 </div>
-                <div class="commentbox">
-                    <label>How did you hear about us:</label>  
-                    <textarea></textarea>
+                <div class="commentbox ml-3">
+                    <label class="form-label">How did you hear about us:</label>  
+                    <textarea class="form-control"></textarea>
                 </div>
                 <div class="randomcode">
                     <input id="code-entered", type="text" name="randomcode" placeholder="Enter characters">
                     <p id="codes"></p>
                 </div>
                 <div>
-                    <input id="submit" type="submit" value="Inquire">
+                    <button class="btn btn-primary" id="submit" type="submit" value="inquire">
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                        <span>Inquire</span>
+                    </button>
                 </div> 
             </fieldset>  
             </form>

@@ -1,3 +1,9 @@
+## Week7 Day1 Homework - [2023-10-16]
+### Added
+- Sticky top for nav bar
+- Paper-plane icon for the Inquire button
+- Bug fix
+
 ## Week6 Day2 Homework - [2023-10-08]
 ### Added
 - Use Bootstrap or general RWD to make everything responsive
