@@ -111,20 +111,39 @@
             </div>
         </div>
 
-        <div id="displaySelected">
-            <div id="result">
-                <h4>My selected activities to enquire:</h4>
-            </div>
-            <div id="sendinfo">
-                <input type="email" class="form-control" placeholder="johndoe@gmail.com" required>
-                <button class="btn btn-info">Get Info</button>
+        <!-- Modal for selected -->
+        <div id="modal-button">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#displaySelected">Confirm</button>
+        </div>
+        <div class="modal fade" id="displaySelected">
+            <div class="modal-dialog bg-light">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>My selected activities to enquire:</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="result"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <form class="was-validated">
+                            <div id="sendinfo">
+                                <input type="email" class="form-control" placeholder="johndoe@gmail.com" required>
+                                <button id="submit-atv" class="btn btn-info" type="submit">Get Info</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
+
     </main>
+
     <!-- Partners -->
     <section>
         <ul id="partners"></ul>
     </section>
+
     <!-- Footer -->
     <footer>
         <div id="nondisclaimer">

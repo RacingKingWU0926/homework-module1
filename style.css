@@ -254,32 +254,27 @@ footer #disclaimer p {
     font-weight: bold;
 }
 
-#activities main #displaySelected {
-    font-family: Arial, Helvetica, sans-serif;
+#modal-button {
     visibility: hidden;
-    margin: 0 auto 0 auto;
-    width: 700px;
-    border: 2px solid #29AB87;
-    padding: 1em;
+    text-align: center;
+    margin-bottom: 3em;
 }
+
 
 #activities main #displaySelected #result {
     display: inline-block;
-    margin: 0;
-    width: 500px;
 }
 
 #activities main #displaySelected #sendinfo {
     display: flex;
     justify-content: flex-end;
-    /* height: 25px; */
 }
 
-#activities main #result {
+/* #activities main #result {
     min-height: 50px;
     width: 300px;
     padding: 0;
-}
+} */
 
 #activities main #result h4 {
     margin-bottom: 1em;
