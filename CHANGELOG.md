@@ -1,8 +1,20 @@
+## Week7 Day2 Homework - [2023-10-16]
+### Added
+- Bug fix for responsive background image and main nav
+- Responsive table in activities
+
+### Replaced
+- Replaced the box for selected activities with an interactive modal
+
+<br>
+
 ## Week7 Day1 Homework - [2023-10-16]
 ### Added
 - Sticky top for nav bar
 - Paper-plane icon for the Inquire button
 - Bug fix
+
+<br>
 
 ## Week6 Day2 Homework - [2023-10-08]
 ### Added

@@ -12,124 +12,157 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body id="activities">
-    <!-- Container to wrap everything -->
-    <div id="container">
-        <header>
-            <!-- Main Header -->
-            <div class="main-header navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-                <!-- Logo -->
-                <div class="logo">
-                    <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
-                </div>
-                <!-- Main Menu -->
-                <nav class="navbar navbar-expand-lg main-menu navbar-light">
-                    <!-- Hamburger Menu Button -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="cliffs.html">Cliffs</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a href="activities.html">Activities</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="contact.html">Contact</a>
-                            </li>
-                        </ul>
+    <!-- Main Header -->
+    <header class="main-header sticky-top">
+
+        <!-- Main Menu -->
+        <nav class="main-menu navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- Logo -->
+            <a class="logo navbar-brand" href="#">
+                <img src="images/logo.png" alt="Great Cliffs Logo">
+            </a>
+
+            <!-- Hamburger Menu Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cliffs.html">Cliffs</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="activities.html">Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="banner-img"></div>
+        <div id="timeofday"><span>Your Current Local Time: </span><span id="clock"></span></div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Activities</h1>
+        <p>There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly and yearly. These activities are not however run by the state park and recreational department. They are operated and manage by private vendors but are partners with the state department. Therefore, for schedule inquiries or information, please contact them directly. For a list of activities, please refer to the table below:</p>
+
+        <!-- Activity Table -->
+        <div id="activityTable">
+            <div class="table-responsive">
+                <table class="table">
+                    <caption>Activities at the Cliffs</caption>
+                    <thead>
+                        <tr>
+                            <th>Activity</th>
+                            <th>West Cliff</th>
+                            <th>North Cliff</th>
+                            <th>East Cliff</th>
+                            <th>South Cliff</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Hiking</td>
+                            <td>College Hikes</td>
+                            <td>Family Fun</td>
+                            <td>Treasure Trails</td>
+                            <td>Canyon Explorer</td>
+                        </tr>
+                        <tr>
+                            <th>Kayak</td>
+                            <td>Western Kayak Meetup</td>
+                            <td>Not Available</td>
+                            <td>Youth Kayaking</td>
+                            <td>Kayak Down</td>
+                        </tr>
+                        <tr>
+                            <th>Skydiving</td>
+                            <td>Seacliff Diving</td>
+                            <td>Sky is the limit</td>
+                            <td>Not Available</td>
+                            <td>Sky Diving for Beginners</td>
+                        </tr>
+                        <tr>
+                            <th>Biking</td>
+                            <td>Bicycle for One</td>
+                            <td>Not Available</td>
+                            <td>Bike Meetup Group</td>
+                            <td>Not Available</td>
+                        </tr>
+                        <tr>
+                            <th>Camping</td>
+                            <td>Youth Camp</td>
+                            <td>Rent a Tent</td>
+                            <td>Campground Adventure</td>
+                            <td>Sunset Camping</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Modal for selected -->
+        <div id="modal-button">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#displaySelected">Confirm</button>
+        </div>
+        <div class="modal fade" id="displaySelected">
+            <div class="modal-dialog bg-light">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>My selected activities to enquire:</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-                </nav>
-            </div>
-        </header>
-        <!-- Main Content -->
-        <main>
-            <h1>Activities</h1>
-            <p>There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly and yearly. These activities are not however run by the state park and recreational department. They are operated and manage by private vendors but are partners with the state department. Therefore, for schedule inquiries or information, please contact them directly. For a list of activities, please refer to the table below:</p>
-            <table id="activityTable" class="mx-auto">
-                <caption>Activities at the Cliffs</caption>
-                <thead>
-                    <tr>
-                        <th>Activity</th>
-                        <th>West Cliff</th>
-                        <th>North Cliff</th>
-                        <th>East Cliff</th>
-                        <th>South Cliff</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>Hiking</td>
-                        <td>College Hikes</td>
-                        <td>Family Fun</td>
-                        <td>Treasure Trails</td>
-                        <td>Canyon Explorer</td>
-                    </tr>
-                    <tr>
-                        <th>Kayak</td>
-                        <td>Western Kayak Meetup</td>
-                        <td>Not Available</td>
-                        <td>Youth Kayaking</td>
-                        <td>Kayak Down</td>
-                    </tr>
-                    <tr>
-                        <th>Skydiving</td>
-                        <td>Seacliff Diving</td>
-                        <td>Sky is the limit</td>
-                        <td>Not Available</td>
-                        <td>Sky Diving for Beginners</td>
-                    </tr>
-                    <tr>
-                        <th>Biking</td>
-                        <td>Bicycle for One</td>
-                        <td>Not Available</td>
-                        <td>Bike Meetup Group</td>
-                        <td>Not Available</td>
-                    </tr>
-                    <tr>
-                        <th>Camping</td>
-                        <td>Youth Camp</td>
-                        <td>Rent a Tent</td>
-                        <td>Campground Adventure</td>
-                        <td>Sunset Camping</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div id="displaySelected">
-                <div id="result">
-                    <h4>My selected activities to enquire:</h4>
-                </div>
-                <div id="sendinfo">
-                    <input type="email" placeholder="johndoe@gmail.com">
-                    <button>Get Info</button>
+                    <div class="modal-body">
+                        <div id="result"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <form class="was-validated">
+                            <div id="sendinfo">
+                                <input type="email" class="form-control" placeholder="johndoe@gmail.com" required>
+                                <button id="submit-atv" class="btn btn-info" type="submit">Get Info</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </main>
-        <!-- Partners -->
-        <section>
-            <ul id="partners"></ul>
-        </section>
-        <!-- Footer -->
-        <footer>
-            <div id="nondisclaimer">
-                <div class="copy">
-                    &copy; Copyright 2020 :: GreatCliffs.com
-                </div>
-                <div class="social">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                </div>
+        </div>
+
+    </main>
+
+    <!-- Partners -->
+    <section>
+        <ul id="partners"></ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div id="nondisclaimer">
+            <div class="copy">
+                &copy; Copyright 2020 :: GreatCliffs.com
             </div>
-            <div id="disclaimer">
-                <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
+            <div class="social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
             </div>
-        </footer>
-    </div>
+        </div>
+        <div id="disclaimer">
+            <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/digclock.js"></script>
     <script src="js/site_scripts.js"></script>
     <script src="js/activity.js"></script>
 </body>

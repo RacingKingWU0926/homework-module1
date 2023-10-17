@@ -1,32 +1,26 @@
 /* Common */
-header {
-    width: 100%;
-    min-height: 400px;
-    padding-top: 3em;
-}
-
 .main-header {
     opacity: 0.8;
-    width: 80%;
-    margin: 2em auto 0 auto;
+    margin: 0 auto 0 auto;
     min-height: 100px;
     height: 100px;
     display: flex;
-    justify-content: flex-end;
-}
-.main-header .logo img {
-    width: 100px;
-    height: 100px;
-    margin: 0 2em 0 0;
-    float: left;
+    justify-content: center;
 }
 
 /* Navigation */
 .main-menu {
-    font-weight: 400;
-    margin-left: auto;
+    font-weight: bold;
 }
+
+.main-menu .logo img {
+    width: 100px;
+    height: 100px;
+    margin: 0 5em 0 0;
+}
+
 .main-menu ul li {
+    width: 120px;
     list-style-type: none;
     display: inline-block;
     padding-left: 25px;
@@ -34,7 +28,8 @@ header {
     border-left: 1px solid rgba(202, 204, 202, 0.6);
     line-height: 100px;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 16px;
+    text-align: center;
 }
 .main-menu ul li a {
     text-decoration: none;
@@ -51,11 +46,23 @@ header {
     color: #fff;
 }
 
+.banner-img {
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
 #timeofday {
     background-image: linear-gradient(0deg, rgba(251, 215, 139, 1) 0%, rgba(118,213, 245, 1) 100%);
     padding: 1em;
     font-family: Arial, Helvetica, sans-serif;
     color: #3a3a3a;
+    margin-top: 600px;
     text-align: center;
     
 }
@@ -63,13 +70,10 @@ header {
     color: #125688;
 }
 
+
 /* Home */
-#home header {
-    width: 100%;
-    background: no-repeat lightgrey url(images/cliff_ocean.jpg);
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
+#home .banner-img {
+    background-image: url("images/cliff_ocean.jpg");
 }
 
 /* Main */
@@ -100,13 +104,11 @@ main p {
 }
 
 /* Partners */
-section {
-    width: 100%;
-    background-color: #4288C3;
-}
 #partners {
+    width: 100%;
     display: grid;
     justify-items: center;
+    background-color: #4288C3;
 }
 #partners .partner {
     height: 10em;
@@ -116,7 +118,7 @@ section {
     background-color: #fff;
     border-radius: 100%;
 }
-section #partners .partner img {
+#partners .partner img {
     width: 90px;
     height: 90px;
 }
@@ -170,12 +172,8 @@ footer #disclaimer p {
 }
 
 /* Cliffs */
-#cliffs header {
-    background: no-repeat url(images/forest_cliff.jpg);
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
+#cliffs .banner-img {
+    background-image: url("images/forest_cliff.jpg");
 }
 #cliffs main .cliff-snapshots {
     text-align: center;
@@ -202,15 +200,11 @@ footer #disclaimer p {
 }
 
 /* Activities */
-#activities header {
-    background: no-repeat url(images/runfly.jpg);
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
+#activities .banner-img {
+    background-image: url("images/runfly.jpg");
 }
 #activityTable {
-    margin-top: 40px;
+    margin: 40px 40px 0 40px;
 }
 
 #activityTable caption {
@@ -260,32 +254,27 @@ footer #disclaimer p {
     font-weight: bold;
 }
 
-#activities main #displaySelected {
-    font-family: Arial, Helvetica, sans-serif;
+#modal-button {
     visibility: hidden;
-    margin: 0 auto 0 auto;
-    width: 700px;
-    border: 2px solid #29AB87;
-    padding: 0.75em;
+    text-align: center;
+    margin-bottom: 3em;
 }
+
 
 #activities main #displaySelected #result {
     display: inline-block;
-    margin: 0;
-    width: 500px;
 }
 
 #activities main #displaySelected #sendinfo {
     display: flex;
     justify-content: flex-end;
-    height: 25px;
 }
 
-#activities main #result {
+/* #activities main #result {
     min-height: 50px;
     width: 300px;
     padding: 0;
-}
+} */
 
 #activities main #result h4 {
     margin-bottom: 1em;
@@ -298,12 +287,8 @@ footer #disclaimer p {
 }
 
 /* Contact */
-#contact header {
-    background: no-repeat url(images/cliff_rock.jpg);
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
+#contact .banner-img {
+    background-image: url("images/cliff_rock.jpg");
 }
 
 /* Contact Info */
@@ -403,18 +388,19 @@ form #submit {
 /* Media Queries */
 /* Navbar: collapse for lg- viewport */
 @media (max-width: 992px) {
-    .navbar-toggler {
-        position: absolute;
-        right:1em;
+    .main-menu {
+        width: 400px;
+    }
+    .logo {
+        margin-top: -14px;
     }
     .main-menu ul {
-        padding: 5em 0;
+        margin-left: 245px;
     }
     .main-menu ul li {
-        line-height: 80px;
+        line-height: 70px;
         background-color:rgb(255, 255, 255);
         border-bottom: 1px solid rgba(202, 204, 202);
-        font-size: large;
     }
 }
 

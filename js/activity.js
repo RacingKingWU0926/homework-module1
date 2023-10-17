@@ -29,22 +29,33 @@ $(document).ready(function() {
             $(this).removeClass('selected');
             $(`#result p:contains(${activity})`).remove();
 
-            // if nothing is selected, hide the #displaySelected box
+            // if nothing is selected, hide the #modal-button box
             if ($("#result").has("p").length == false) {
-                $("#displaySelected").css({
-                    "visibility": "hidden",
-                    "margin": "0 auto 0 auto",
+                $("#modal-button").css({
+                    "visibility": "hidden"
                 });
             }
 
         } else {
             $(this).addClass('selected');
             $("#result").append(`<p>${activity} at ${cliffName}</p>`);
-            $("#displaySelected").css({
+            $("#modal-button").css({
                 "visibility": "visible",
-                "margin": "2em auto 2em auto",
             });
         }
     });
+
+    // Handle the submit button in the modal
+    $("#submit-atv").click(function() {
+        var email = $('#emailField').val();
+
+        // Just double check
+        if (email.trim() === '') {
+            alert('Please fill in the email field.');
+        } else {
+            $("#displaySelected").modal("hide");
+            window.location.href = "index.html";
+        }
+    })
 
 });
